@@ -47,7 +47,6 @@ GameInfo* gameInfo = NULL;        // Pointer naar game informatie
 PlayerInfo* playerInfo = NULL;    // Pointer naar speler informatie  
 MelodyState* melodyState = NULL;  // Pointer naar melody state
 
-// Buzzer variables (following professor's approach)
 int totalTimerCyclesToExecute = 0;
 int cyclesBeforeBuzzerToggle = 0;
 int buzzerToggleWithinThisTimerCycles = 0;
@@ -364,9 +363,9 @@ void initTimer2() {
 }
 
 void initButtons(){
-    DDRC = 0b11110001;       
-    PORTC |= 0b00001110;     
-    PCICR |= 0b00000010;     
+    DDRC = 0b11110001;
+    PORTC |= 0b00001110;
+    PCICR |= 0b00000010;
     PCMSK1 |= 0b00001110;
 }
 

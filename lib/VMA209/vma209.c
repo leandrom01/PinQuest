@@ -32,7 +32,7 @@ void enableLed(int lednumber)
 }
 
 void lightUpLed(int lednumber)
-{ //opgelet: ge-enabelde leds staan ook ineens aan (want 0 = aan)
+{ //opgelege-enabelde leds staan ook ineens aan (want 0 = aan)
   PORTB &= ~makeMaskBasedOnLedNumber(lednumber);
 }
 
@@ -79,6 +79,6 @@ void lightDownAllLeds()
 }
 
 void toggleLed(int lednumber)
-{ //opgelet: ge-enabelde leds staan ook ineens aan (want 0 = aan)
+{ //ge-enabelde leds staan ook ineens aan (want 0 = aan)
   PORTB ^= makeMaskBasedOnLedNumber(lednumber);
 }
